@@ -11,549 +11,660 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
   
-  :root {
-  --white-color:                  #FFFFFF;
-  --primary-color:                #ffc107;
-  --section-bg-color:             #f9f9f9;
-  --dark-color:                   #000000;
-  --grey-color:                   #fcfeff;
-  --text-secondary-white-color:   rgba(255, 255, 255, 0.98);
-  --title-color:                  #565758;
-  --p-color:                      #717275;
-  --text-gray:                    #ccc;
-
-  --body-font-family:           'Noto Sans JP', sans-serif;
-
-  --h1-font-size:               72px;
-  --h2-font-size:               42px;
-  --h3-font-size:               36px;
-  --h4-font-size:               32px;
-  --h5-font-size:               24px;
-  --h6-font-size:               22px;
-  --p-font-size:                20px;
-  --copyright-text-font-size:   14px;
-  --custom-link-font-size:      12px;
-
-  --font-weight-light:          300;
-  --font-weight-normal:         400;
-  --font-weight-bold:           700;
-  --font-weight-black:          900;
-}
-
-
-
-
-   /*=====================*/
-    /* header/nav section */
-   /*=====================*/
-   .navbar-brand{
-    font-size: 1.6rem;
-    color: #3399CC;
-   }
-   .navbar-brand i{
-    font-size: 2rem;
-   }
-   .nav-item{
-    margin-right: 30px;
-   }
-   .nav-item:last-child{
-    margin-right: 0;
-   }
-   .nav-link{
-    color: #666666;
-    border-bottom: 4px solid transparent;
-    font-size: 1.2rem;
-   }
-   .navbar-nav .nav-link{
-
-   }
-   .nav-link-1.active,
-   .nav-link-1:hover{
-    border-color: #33CCFF;
-   }
-   .nav-link-2.active,
-   .nav-link-2:hover{
-    border-color: #FF6666;
-   }
-   .nav-link-3.active,
-   .nav-link-3:hover{
-    border-color: #CC66CC;
-   }
-   .nav-link-4.active,
-   .nav-link-4:hover{
-    border-color: #33CC66;
-   }
-
-
-
-   /*=====================*/
-    /* hero/search */
-   /*=====================*/
-   .ig-hero{
-     min-height: 200px;
-     background-image: url(../img/hero.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center bottom;
-     background-attachment: fixed;
-   }
-   .form-control{
-    
-   }
-   .ig-search-input{
-    width: 360px;
-    border-radius: 0;
-    border: none;
-    height: 50px;
-    color: #009999;
-   }
-   .ig-search-btn{
-    width: 100px;
-    border-radius: 0;
-    border: none;
-    background: #009999;
-    color: #fff;
-   }
-   
-
-   /*=====================*/
-    /* content */
-   /*=====================*/
-   .ig-text-gray-light{
-    color: #cccc;
-   }
-   .ig-text-gray{
-    color: #999;
-   }
-   .section-content{
-    margin: 70px 0px 70px 0px;
-   }
-   .content-heading{
-    color: #009999;
-   }
-   .page-nmbr{
-    color: #009999;
-   }
-   .page-nmbr-input{
-    width: 40px;
-    text-align: center;
-    background: #f4f4f4;
-    color: #009999;
-    border: 1px solid #cccccc;
-    padding: auto;
-    
-   }
-
-   /*----- figure effect -----*/
-   .ig-figure-item{
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    cursor: pointer;
-   }
-   .ig-figure-item img{
-    position: relative;
-    display: block;
-    min-height: 100%;
-    max-width: 100%;
-    opacity: 0.8;
-   }
-   /* .ig-figure-item img{
-    position: absolute;
-    display: block;
-    min-height: 100%;
-    max-width: 100%;
-    opacity: 0.8;
-   } */
-
-   .ig-figure-item figcaption{
-    padding: 2em;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 1.2rem;
-    backface-visibility: hidden;
-   }
-
-   /* .ig-figure-item figcaption::before,
-   .ig-figure-item figcaption::after{
-    pointer-events: none;
-   } */
-
-   .ig-figure-item figcaption,
-   .ig-figure-item figcaption > a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-   }
-   .ig-figure-item figcaption > a{
-    z-index: 1000;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0;
-   }
-   .ig-figure-item h2{
-    word-spacing: -0.15em;
-    font-weight: 300;
-   }
-   /* .ig-figure-item h2,
-   .ig-figure-item p{
-    margin: 0;
-   } */
-   /* .ig-figure-item p{
-    letter-spacing: 1px;
-    font-size: 68.5%;
-   } */
-
-   /* effect */
-   figure.ig-figure-effect{
-    background: #030c17;
-   }
-   figure.ig-figure-effect img{
-    opacity: 0.9;
-    transition: opacity 0.35s;
-   }
-   figure.ig-figure-effect figcaption::before{
-    position: absolute;
-    top: 30px;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
-    border: 2px solid #fff;
-    box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
-    content: '';
-	  opacity: 0;
-    transition: opacity 0.35s, transform 0.35s;
-    transform: scale3d(1.4,1.4,1);
-  }
-  figure.ig-figure-effect h2{
-    font-size: 1.3em;
-    opacity: 0;
-    transition: opacity 0.35s, transform 0.35s;
-    transform: scale(1.5);
-  }
-  figure.ig-figure-effect:hover figcaption::before,
-  figure.ig-figure-effect:hover h2{
-    opacity: 1;
-    transform: scale3d(1,1,1);
-  }
-  figure.ig-figure-effect:hover figcaption{background-color: rgba(58,52,42,0);}
-  figure.ig-figure-effect:hover img{opacity: 0.4;}
-
-  /*----- pagination/paging -----*/
-  .paging{}
-  
-  .ig-btn-prev, .ig-btn-next{
-    background: #009999;
-    padding: 12px 50px;
-    color: #fff;
-    font-size: 1.2rem;
-    
-  }
-  .ig-btn-prev:hover, .ig-btn-next:hover{
-    background-color: #086969;
-    color: #fff;
-  }
-  .paging-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    height: 60px;
-    width: 60px;
-    margin: 10px;
-    background-color: #EEEEEE;
-    font-size: 1.1rem;
-    color: #999;
-    border-radius: 5px;
-    transition: all 0.3s;
-  }
-  .paging-link:hover{
-    background-color: #009999;
-    color: #fff;
-    transition: all 0.3s;
-  }
-
-  /*=====================*/
-    /* footer */
-   /*=====================*/
-   .footer-section{
-    background-color: #EEEEEE;
-   }
-   .ig-text-primary{color: #009999;}
-   .ig-footer-title{
-    font-size: 1.4rem;
-   }
-   .ig-social-link{}
-   .ig-social-link li{
-    margin-left: 15px;
-   }
-   .ig-social-link li a{
-    text-decoration: none;
-    display: flex;
-    width: 44px;
-    height: 44px;
-    background-color: #fff;
-    justify-content: center;
-    align-items: center;
-    color: #717275;
-    transition: all 0.5s;
-
-   }
-   .ig-social-link li:hover a{
-    background-color: #009999;
-    color: #fff;
-    transition: all 0.5s;
-   }
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-@media only screen and (max-width:575px){
-  .ig-container-content{
-    max-width: 420px;
-  }
-}
-
-@media only screen and (max-width:767px){
-  .ig-pagination{
-    flex-direction: column;
-  }
-}
-
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Customize the background color to match your design.
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+  
+     /*=====================*/
+      /* Preloader */
+     /*=====================*/
+     #loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1001;
+  }
+  #loader {
+      display: block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #3498db;
+  
+      -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  
+      z-index: 1002;
+  }
+  
+      #loader:before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          right: 5px;
+          bottom: 5px;
+          border-radius: 50%;
+          border: 3px solid transparent;
+          border-top-color: #e74c3c;
+  
+          -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+      }
+  
+      #loader:after {
+          content: "";
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          right: 15px;
+          bottom: 15px;
+          border-radius: 50%;
+          border: 3px solid transparent;
+          border-top-color: #f9c922;
+  
+          -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+            animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+      }
+  
+      @-webkit-keyframes spin {
+          0%   { 
+              -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+              -ms-transform: rotate(0deg);  /* IE 9 */
+              transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+          }
+          100% {
+              -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+              -ms-transform: rotate(360deg);  /* IE 9 */
+              transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+          }
+      }
+      @keyframes spin {
+          0%   { 
+              -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+              -ms-transform: rotate(0deg);  /* IE 9 */
+              transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+          }
+          100% {
+              -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+              -ms-transform: rotate(360deg);  /* IE 9 */
+              transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+          }
+      }
+  
+      #loader-wrapper .loader-section {
+          position: fixed;
+          top: 0;
+          width: 51%;
+          height: 100%;
+          background: #222222;
+          z-index: 1001;
+          -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: translateX(0);  /* IE 9 */
+          transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+      }
+  
+      #loader-wrapper .loader-section.section-left {
+          left: 0;
+      }
+  
+      #loader-wrapper .loader-section.section-right {
+          right: 0;
+      }
+  
+      /* Loaded */
+      .loaded #loader-wrapper .loader-section.section-left {
+          -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+              -ms-transform: translateX(-100%);  /* IE 9 */
+                  transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+  
+          -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+      }
+  
+      .loaded #loader-wrapper .loader-section.section-right {
+          -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+              -ms-transform: translateX(100%);  /* IE 9 */
+                  transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+  
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+          transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+      }
+      
+      .loaded #loader {
+          opacity: 0;
+          -webkit-transition: all 0.3s ease-out;  
+                  transition: all 0.3s ease-out;
+      }
+      .loaded #loader-wrapper {
+          visibility: hidden;
+  
+          -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+              -ms-transform: translateY(-100%);  /* IE 9 */
+                  transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+  
+          -webkit-transition: all 0.3s 1s ease-out;  
+                  transition: all 0.3s 1s ease-out;
+      }
+  
+  
+  
+     /*=====================*/
+      /* header/nav section */
+     /*=====================*/
+     .navbar-brand{
+      font-size: 1.6rem;
+      color: #3399CC;
+     }
+     .navbar-brand i{
+      font-size: 2rem;
+     }
+     .nav-item{
+      margin-right: 30px;
+     }
+     .nav-item:last-child{
+      margin-right: 0;
+     }
+     .nav-link{
+      color: #666666;
+      border-bottom: 4px solid transparent;
+      font-size: 1.2rem;
+     }
+     .navbar-nav .nav-link{
+  
+     }
+     .nav-link-1.active,
+     .nav-link-1:hover{
+      border-color: #33CCFF;
+     }
+     .nav-link-2.active,
+     .nav-link-2:hover{
+      border-color: #FF6666;
+     }
+     .nav-link-3.active,
+     .nav-link-3:hover{
+      border-color: #CC66CC;
+     }
+     .nav-link-4.active,
+     .nav-link-4:hover{
+      border-color: #33CC66;
+     }
+  
+  
+  
+     /*=====================*/
+      /* hero/search */
+     /*=====================*/
+     .ig-hero{
+       min-height: 200px;
+       background-image: url(../img/hero.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center bottom;
+       background-attachment: fixed;
+     }
+     .form-control{
+      
+     }
+     .ig-search-input{
+      width: 360px;
+      border-radius: 0;
+      border: none;
+      height: 50px;
+      color: #009999;
+     }
+     .ig-search-btn{
+      width: 100px;
+      border-radius: 0;
+      border: none;
+      background: #009999;
+      color: #fff;
+     }
+     
+  
+     /*=====================*/
+      /* content */
+     /*=====================*/
+     .ig-text-gray-light{
+      color: #cccc;
+     }
+     .ig-text-gray{
+      color: #999;
+     }
+     .section-content{
+      margin: 70px 0px 70px 0px;
+     }
+     .content-heading{
+      color: #009999;
+     }
+     .page-nmbr{
+      color: #009999;
+     }
+     .page-nmbr-input{
+      width: 40px;
+      text-align: center;
+      background: #f4f4f4;
+      color: #009999;
+      border: 1px solid #cccccc;
+      padding: auto;
+      
+     }
+  
+     /*----- figure effect -----*/
+     .ig-figure-item{
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer;
+     }
+     .ig-figure-item img{
+      position: relative;
+      display: block;
+      min-height: 100%;
+      max-width: 100%;
+      opacity: 0.8;
+     }
+     /* .ig-figure-item img{
+      position: absolute;
+      display: block;
+      min-height: 100%;
+      max-width: 100%;
+      opacity: 0.8;
+     } */
+  
+     .ig-figure-item figcaption{
+      padding: 2em;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.2rem;
+      backface-visibility: hidden;
+     }
+  
+     /* .ig-figure-item figcaption::before,
+     .ig-figure-item figcaption::after{
+      pointer-events: none;
+     } */
+  
+     .ig-figure-item figcaption,
+     .ig-figure-item figcaption > a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+     }
+     .ig-figure-item figcaption > a{
+      z-index: 1000;
+      text-indent: 200%;
+      white-space: nowrap;
+      font-size: 0;
+      opacity: 0;
+     }
+     .ig-figure-item h2{
+      word-spacing: -0.15em;
+      font-weight: 300;
+     }
+     /* .ig-figure-item h2,
+     .ig-figure-item p{
+      margin: 0;
+     } */
+     /* .ig-figure-item p{
+      letter-spacing: 1px;
+      font-size: 68.5%;
+     } */
+  
+     /* effect */
+     figure.ig-figure-effect{
+      background: #030c17;
+     }
+     figure.ig-figure-effect img{
+      opacity: 0.9;
+      transition: opacity 0.35s;
+     }
+     figure.ig-figure-effect figcaption::before{
+      position: absolute;
+      top: 30px;
+      bottom: 30px;
+      left: 30px;
+      right: 30px;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+      content: '';
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: scale3d(1.4,1.4,1);
+    }
+    figure.ig-figure-effect h2{
+      font-size: 1.3em;
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: scale(1.5);
+    }
+    figure.ig-figure-effect:hover figcaption::before,
+    figure.ig-figure-effect:hover h2{
+      opacity: 1;
+      transform: scale3d(1,1,1);
+    }
+    figure.ig-figure-effect:hover figcaption{background-color: rgba(58,52,42,0);}
+    figure.ig-figure-effect:hover img{opacity: 0.4;}
+  
+    /*----- pagination/paging -----*/
+    .paging{}
+    
+    .ig-btn-prev, .ig-btn-next{
+      background: #009999;
+      padding: 12px 50px;
+      color: #fff;
+      font-size: 1.2rem;
+      
+    }
+    .ig-btn-prev:hover, .ig-btn-next:hover{
+      background-color: #086969;
+      color: #fff;
+    }
+    .paging-link{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 60px;
+      width: 60px;
+      margin: 10px;
+      background-color: #EEEEEE;
+      font-size: 1.1rem;
+      color: #999;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+    .paging-link:hover{
+      background-color: #009999;
+      color: #fff;
+      transition: all 0.3s;
+    }
+  
+    /*=====================*/
+      /* footer */
+     /*=====================*/
+     .footer-section{
+      background-color: #EEEEEE;
+     }
+     .ig-text-primary{color: #009999;}
+     .ig-footer-title{
+      font-size: 1.4rem;
+     }
+     .ig-social-link{}
+     .ig-social-link li{
+      margin-left: 15px;
+     }
+     .ig-social-link li a{
+      text-decoration: none;
+      display: flex;
+      width: 44px;
+      height: 44px;
+      background-color: #fff;
+      justify-content: center;
+      align-items: center;
+      color: #717275;
+      transition: all 0.5s;
+  
+     }
+     .ig-social-link li:hover a{
+      background-color: #009999;
+      color: #fff;
+      transition: all 0.5s;
+     }
+  
+  
+  
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
+  
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+  
+  .visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  
+  /*
+   * Extends the .visually-hidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * The use of `table` rather than `block` is only necessary if using
+   * `::before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
     content: "";
+    display: table;
   }
-
-  pre {
-    white-space: pre-wrap !important;
+  
+  .clearfix::after {
+    clear: both;
   }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
   }
-
-  tr,
-  img {
-    page-break-inside: avoid;
+  @media only screen and (max-width:575px){
+    .ig-container-content{
+      max-width: 420px;
+    }
   }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  
+  @media only screen and (max-width:767px){
+    .ig-pagination{
+      flex-direction: column;
+    }
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
   }
-}
-
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+  
