@@ -591,6 +591,20 @@
       flex-direction: column;
     }
   }
+  @media (max-width:991px){
+    .navbar-collapse{
+      position: fixed;
+      top: 65px;
+      right: 0;
+      width: 150px;
+      background-color: #fff;
+      padding: 10px;
+    }
+    .navbar-toggler:focus {
+      
+      box-shadow: 0 0 0 0;
+  }
+  }
   
   
   @media print,
