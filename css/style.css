@@ -277,7 +277,7 @@
        background-image: url(../img/hero.jpg);
        background-repeat: no-repeat;
        background-size: cover;
-       background-position: center bottom;
+       background-position: center center;
        background-attachment: fixed;
      }
      .form-control{
@@ -335,11 +335,11 @@
       cursor: pointer;
      }
      .ig-figure-item img{
-      position: relative;
+      /* position: relative;
       display: block;
       min-height: 100%;
       max-width: 100%;
-      opacity: 0.8;
+      opacity: 0.8; */
      }
      /* .ig-figure-item img{
       position: absolute;
@@ -357,11 +357,7 @@
       backface-visibility: hidden;
      }
   
-     /* .ig-figure-item figcaption::before,
-     .ig-figure-item figcaption::after{
-      pointer-events: none;
-     } */
-  
+     /* b */
      .ig-figure-item figcaption,
      .ig-figure-item figcaption > a {
       position: absolute;
@@ -577,34 +573,41 @@
      Modify as content requires.
      ========================================================================== */
   
+     @media only screen and (max-width:991px){
+      .navbar-collapse{
+        position: fixed;
+        top: 65px;
+        right: 0;
+        width: 150px;
+        background-color: #fff;
+        padding: 10px;
+      }
+      .navbar-toggler:focus {
+        
+        box-shadow: 0 0 0 0;
+    }
+      .ig-container-content{
+        max-width:888px;
+      }
+    }
+    @media only screen and (max-width:767px){
+      .ig-pagination{
+        flex-direction: column;
+      }
+    }
+  
+    @media only screen and (max-width:575px){
+      .ig-container-content{
+        max-width: 420px;
+      }
+    }
+    
   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
   }
-  @media only screen and (max-width:575px){
-    .ig-container-content{
-      max-width: 420px;
-    }
-  }
   
-  @media only screen and (max-width:767px){
-    .ig-pagination{
-      flex-direction: column;
-    }
-  }
-  @media (max-width:991px){
-    .navbar-collapse{
-      position: fixed;
-      top: 65px;
-      right: 0;
-      width: 150px;
-      background-color: #fff;
-      padding: 10px;
-    }
-    .navbar-toggler:focus {
-      
-      box-shadow: 0 0 0 0;
-  }
-  }
+  
+  
   
   
   @media print,
