@@ -266,6 +266,9 @@
      .nav-link-4:hover{
       border-color: #33CC66;
      }
+     .navbar-collapse{
+      
+     }
   
   
   
@@ -296,6 +299,17 @@
       border: none;
       background: #009999;
       color: #fff;
+     }
+     #ig-video-container{
+      max-height: 400px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+     }
+     #ig-video{
+      display: block;
+      height: 100%;
+      width: 100%;
      }
      
   
@@ -575,12 +589,14 @@
   
      @media only screen and (max-width:991px){
       .navbar-collapse{
-        position: fixed;
-        top: 65px;
+        position: absolute;
+        top: 64px;
         right: 0;
         width: 150px;
         background-color: #fff;
         padding: 10px;
+        z-index: 1000;
+        border: 1px solid #717275;
       }
       .navbar-toggler:focus {
         
