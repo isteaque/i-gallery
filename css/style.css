@@ -228,6 +228,12 @@
       /*=====================*/
       /* Reusable component */
      /*=====================*/
+      .ig-text-gray-light{color: #cccc;}
+      .ig-text-gray{color: #999;}
+      .ig-text-primary{color: #009999;}
+      .ig-text-purple{color: #CC6699;}
+      .box{box-sizing: border-box;}
+      
       .btn-primary{
         background-color: #009999;
         color: white;
@@ -238,10 +244,44 @@
        .btn-primary:hover{
         background-color: #086969;
        }
-       .ig-text-primary{color: #009999;}
-       .box{
-        box-sizing: border-box;
+       .contact-btn.btn-primary{
+        padding: 0.5rem 2rem;
+        border-radius: 3px;
        }
+       
+        .ig-social-link{}
+        .ig-social-link li{
+          margin-left: 15px;
+        }
+        .ig-social-link li a{
+          text-decoration: none;
+          display: flex;
+          width: 44px;
+          height: 44px;
+          background-color: #fff;
+          justify-content: center;
+          align-items: center;
+          color: #717275;
+          transition: all 0.5s;
+  
+        }
+        .ig-social-link li:hover a,
+        .contact.ig-social-link li:hover a{
+          background-color: #009999;
+          color: #fff;
+          transition: all 0.5s;
+        }
+        .contact.ig-social-link li a{
+          width: 30px;
+          height: 30px;
+          background-color: #EEEEEE;
+          color: #666666;
+        }
+        .contact.ig-social-link li{
+          margin-right: 10px;
+          margin-left: 0;
+        }
+        
      /*=====================*/
       /* header/nav section */
      /*=====================*/
@@ -336,12 +376,7 @@
      /*=====================*/
       /* content */
      /*=====================*/
-     .ig-text-gray-light{
-      color: #cccc;
-     }
-     .ig-text-gray{
-      color: #999;
-     }
+     
      .section-content{
       margin: 70px 0px 70px 0px;
      }
@@ -503,7 +538,12 @@
      .text-justify{
       text-align: justify;
      }
-     
+    /*=====================*/
+      /* contact.html content */
+     /*=====================*/   
+     .custom-img{
+      
+     }
   
     /*=====================*/
       /* footer */
@@ -515,27 +555,7 @@
      .ig-footer-title{
       font-size: 1.4rem;
      }
-     .ig-social-link{}
-     .ig-social-link li{
-      margin-left: 15px;
-     }
-     .ig-social-link li a{
-      text-decoration: none;
-      display: flex;
-      width: 44px;
-      height: 44px;
-      background-color: #fff;
-      justify-content: center;
-      align-items: center;
-      color: #717275;
-      transition: all 0.5s;
-  
-     }
-     .ig-social-link li:hover a{
-      background-color: #009999;
-      color: #fff;
-      transition: all 0.5s;
-     }
+     
   
      
   

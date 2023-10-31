@@ -1,0 +1,282 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- pre-loader/Page loader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
+  <!--header/nav area start-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-film"></i>
+        I-gallery
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link nav-link-1" href="index.html">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-2" href="video.html">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-3" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-4 active" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--header/nav area end-->
+
+  <!--hero/search area start--> 
+  <div class="ig-hero d-flex justify-content-center align-items-center">
+    
+  </div>
+  <!--hero/search area end-->
+
+
+  <!--content area start-->
+  <section class="section-content">
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-lg-4 col-12 mb-5">
+                <h2 class="ig-text-primary mb-5">Contact Page</h2>
+                <form id="contact-form" action="" method="POST" class="tm-contact-form mx-auto">
+                    <div class="form-group p-1">
+                        <input type="text" name="name" class="form-control rounded-0" placeholder="Name" required />
+                    </div>
+                    <div class="form-group p-1">
+                        <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
+                    </div>
+                    <div class="form-group p-1">
+                        <select class="form-control" id="contact-select" name="inquiry">
+                            <option value="-">Subject</option>
+                            <option value="sales">Sales &amp; Marketing</option>
+                            <option value="creative">Creative Design</option>
+                            <option value="uiux">UI / UX</option>
+                        </select>
+                    </div>
+                    <div class="form-group p-1">
+                        <textarea rows="8b" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
+                    </div>
+
+                    <div class="form-group p-1">
+                        <button type="submit" class="contact-btn btn-primary">Send</button>
+                    </div>
+                </form>                
+            </div>
+            <div class="col-lg-4 col-12 mb-5">
+                <div class="tm-address-col">
+                    <h2 class="ig-text-primary mb-5">Our Address</h2>
+                    <p class="ig-text-gray">Quisque eleifend mi et nisi eleifend pretium. Duis porttitor accumsan arcu id rhoncus. Praesent fermentum venenatis ipsum, eget vestibulum purus. </p>
+                    <p class="ig-text-gray">Nulla ut scelerisque elit, in fermentum ante. Aliquam congue mattis erat, eget iaculis enim posuere nec. Quisque risus turpis, tempus in iaculis.</p>
+                    <address class="ig-text-gray">
+                        120-240 Fusce eleifend varius tempus<br>
+                        Duis consectetur at ligula 10660
+                    </address>
+                    <ul class="list-unstyled mt-5">
+                        <li>
+                            <a href="#" class="text-decoration-none ig-text-gray">
+                                <i class="fas fa-envelope me-2"></i>
+                                Email: info@company.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none ig-text-gray">
+                                <i class="fas fa-phone me-2"></i>
+                                Tel: 010-020-0340
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none ig-text-gray">
+                                <i class="fas fa-globe me-2"></i>
+                                URL: www.company.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+            <div class="col-lg-4 col-12">
+                <h2 class="ig-text-primary mb-5">Our Location</h2>
+                <!-- Map -->
+                <div class="mapouter mb-4">
+                    <div class="gmap-canvas">
+                        <iframe width="100%" height="400" id="gmap-canvas"
+                            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <img src="img/people-1.jpg" alt="Image" class="mb-4 img-fluid p-1 border border-dark-subtle rounded-1">
+                <h2 class="ig-text-primary mb-4">Ryan White</h2>
+                <h3 class="ig-text-purple h5 mb-4">Chief Executive Officer</h3>
+                <p class="mb-4 ig-text-gray text-justify">
+                    Mauris ante tellus, feugiat nec metus non, bibendum semper velit. Praesent laoreet urna id tristique fermentum. Morbi venenatis dui quis diam mollis pellentesque.
+                </p>
+                <ul class="contact ig-social-link list-unstyled d-flex justify-content-start ">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <img src="img/people-2.jpg" alt="Image" class="mb-4 img-fluid p-1 border border-dark-subtle rounded-1">
+                <h2 class="ig-text-primary mb-4">Catherine Pinky</h2>
+                <h3 class="ig-text-purple h5 mb-4">Chief Marketing Officer</h3>
+                <p class="mb-4 ig-text-gray text-justify">
+                  Mauris ante tellus, feugiat nec metus non, bibendum semper velit. Praesent laoreet urna id tristique fermentum. Morbi venenatis dui quis diam mollis pellentesque.
+                </p>
+                <ul class="contact ig-social-link list-unstyled d-flex justify-content-start ">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <img src="img/people-3.jpg" alt="Image" class="mb-4 img-fluid p-1 border border-dark-subtle rounded-1">
+                <h2 class="ig-text-primary mb-4">Johnny Brief</h2>
+                <h3 class="ig-text-purple h5 mb-4">Accounting Executive</h3>
+                <p class="mb-4 ig-text-gray text-justify">
+                  Mauris ante tellus, feugiat nec metus non, bibendum semper velit. Praesent laoreet urna id tristique fermentum. Morbi venenatis dui quis diam mollis pellentesque.
+                </p>
+                <ul class="contact ig-social-link list-unstyled d-flex justify-content-start ">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <img src="img/people-4.jpg" alt="Image" class="mb-4 img-fluid p-1 border border-dark-subtle rounded-1">
+                <h2 class="ig-text-primary mb-4">George Nelson</h2>
+                <h3 class="ig-text-purple h5 mb-4">Creative Art Director #C69</h3>
+                <p class="mb-4 ig-text-gray text-justify">
+                  Mauris ante tellus, feugiat nec metus non, bibendum semper velit. Praesent laoreet urna id tristique fermentum. Morbi venenatis dui quis diam mollis pellentesque.
+                </p>
+                <ul class="contact ig-social-link list-unstyled d-flex justify-content-start ">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+  </section>
+  <!--content area end-->
+
+  <!--footer area end-->
+  <footer class="footer-section pt-5 pb-3">
+    <div class="container-fluid container-md">
+      <div class="row">
+        <div class="col-lg-6 px-5 mb-5">
+          <h3 class="ig-text-primary ig-footer-title mb-4">About I-gallery</h3>
+          <p class="ig-text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic beatae sed quas provident incidunt corporis enim necessitatibus magni fugiat..</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+          <h3 class="ig-text-primary ig-footer-title mb-4">Our links</h3>
+          <ul class="list-unstyled ">
+            <li><a href="" class="text-decoration-none ig-text-gray pb-3">Advertise</a></li>
+            <li><a href="" class="text-decoration-none ig-text-gray pb-3">Support</a></li>
+            <li><a href="" class="text-decoration-none ig-text-gray pb-3">Our comkpany</a></li>
+            <li><a href="" class="text-decoration-none ig-text-gray pb-3">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+          <div class="ig-social">
+            <ul class="ig-social-link list-unstyled d-flex justify-content-end ">
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+          <div class="terms-policy">
+            <ul class="float-end list-unstyled mt-4">
+              <li><a href="" class="text-decoration-none ig-text-gray">Terms of use</a></li>
+              <li><a href="" class="text-decoration-none ig-text-gray">Privacy policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6 px-5">
+          <p class="ig-text-gray">Copyright I-gallery company.<br> All rights reserved</p>
+          
+        </div>
+        <div class="col-6 px-5">
+          <p class="float-end ig-text-gray">Developed by Isteaque</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!--footer area end-->
+
+
+
+
+
+
+
+
+
+
+  <script src="js/vendor/jquery.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/fontawesome/all.min.js"></script>
+  <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+  <script src="js/vendor/html5shiv.js"></script>
+  <script src="js/vendor/respond.min.js"></script>
+  <script src="js/vendor/selectivizr.js"></script>
+  
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
