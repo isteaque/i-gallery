@@ -678,6 +678,11 @@
       .ig-container-content{
         max-width: 420px;
       }
+      .ig-search-input{
+        width: 100%;
+        max-width: 360px;
+        
+       }
     }
     
   @media only screen and (min-width: 35em) {
