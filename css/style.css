@@ -13,7 +13,7 @@
 
    html {
     color: #222;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.4;
   }
   
@@ -83,7 +83,25 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-  
+    /*---------------------------------------
+    CUSTOM PROPERTIES ( VARIABLES )             
+  -----------------------------------------*/
+  :root {
+    --white-color:                  #FFFFFF;
+    --primary-color:                #009999;
+    --primary-dark-color:           #086969;
+    --bg-primary-color:             #EEEEEE;
+    --dark-color:                   #030c17;
+    --gray-shadow-color:            rgba(255,255,255,0.2);
+    --gray-color:                   #999;
+    --gray-light-color:             #cccc;
+    --link1-color:                  #33CCFF;
+    --link2-color:                  #FF6666;
+    --link3-color:                  #33CC66;
+    --link4-color:                  #CC66CC;
+    --focus-color:                  #86b7fe;
+    --hover-color:                  #717275;
+  }
   
      /*=====================*/
       /* Preloader */
@@ -228,21 +246,21 @@
       /*=====================*/
       /* Reusable component */
      /*=====================*/
-      .ig-text-gray-light{color: #cccc;}
-      .ig-text-gray{color: #999;}
-      .ig-text-primary{color: #009999;}
-      .ig-text-purple{color: #CC6699;}
+      .ig-text-gray-light{color: var(--gray-light-color);}
+      .ig-text-gray{color: var(--gray-color);}
+      .ig-text-primary{color: var(--primary-color);}
+      .ig-text-purple{color: var(--link4-color);}
       .box{box-sizing: border-box;}
       
       .btn-primary{
-        background-color: #009999;
-        color: white;
+        background-color: var(--primary-color);
+        color: var(--white-color);
         padding: 0.375rem 1rem;
         font-size: 1.2rem;
         border: 0;
        }
        .btn-primary:hover{
-        background-color: #086969;
+        background-color: var(--primary-dark-color);
        }
        .contact-btn.btn-primary{
         padding: 0.5rem 2rem;
@@ -258,23 +276,23 @@
           display: flex;
           width: 44px;
           height: 44px;
-          background-color: #fff;
+          background-color: var(--white-color);
           justify-content: center;
           align-items: center;
-          color: #717275;
+          color: var(--hover-color);
           transition: all 0.5s;
   
         }
         .ig-social-link li:hover a,
         .contact.ig-social-link li:hover a{
-          background-color: #009999;
-          color: #fff;
+          background-color: var(--primary-color);
+          color: var(--white-color);
           transition: all 0.5s;
         }
         .contact.ig-social-link li a{
           width: 30px;
           height: 30px;
-          background-color: #EEEEEE;
+          background-color: var(--bg-primary-color);
           color: #666666;
         }
         .contact.ig-social-link li{
@@ -339,8 +357,6 @@
        background-position: center;
        background-attachment: fixed;
        background-origin: content-box;
-       
-       backg
        /* background: transparent; */
      }
      .form-control{
@@ -351,13 +367,13 @@
       border-radius: 0;
       border: none;
       height: 50px;
-      color: #009999;
+      color: var(--primary-color);
      }
      .ig-search-btn{
       width: 100px;
       border-radius: 0;
       border: none;
-      background: #009999;
+      background: var(--primary-color);
       color: #fff;
      }
      #ig-video-container{
@@ -378,22 +394,28 @@
      /*=====================*/
      
      .section-content{
-      margin: 70px 0px 70px 0px;
+      margin: 48px 0px 70px 0px;
      }
      .content-heading{
-      color: #009999;
+      color: var(--primary-color);
      }
+     .content-row-mid {
+      margin: 16px 0px 0px 0px;
+}
      .page-nmbr{
-      color: #009999;
+      color: var(--primary-color);
      }
      .page-nmbr-input{
       width: 40px;
       text-align: center;
       background: #f4f4f4;
-      color: #009999;
-      border: 1px solid #cccccc;
+      color: var(--primary-color);
+      border: 1px solid var(--gray-light-color);
       padding: auto;
       
+     }
+     .content-mid{
+      margin-bottom: 32px;
      }
   
      /*----- figure effect -----*/
@@ -421,7 +443,7 @@
      .ig-figure-item figcaption{
       padding: 2em;
       text-transform: uppercase;
-      color: #fff;
+      color: var(--white-color);
       font-size: 1.2rem;
       backface-visibility: hidden;
      }
@@ -456,9 +478,10 @@
      } */
   
      /*-- effect-- */
-     figure.ig-figure-effect{
-      background: #030c17;
-     }
+     figure.ig-figure-effect {
+      background: var(--dark-color);
+      margin: 0;
+  }
      figure.ig-figure-effect img{
       opacity: 0.9;
       transition: opacity 0.35s;
@@ -469,10 +492,10 @@
       bottom: 30px;
       left: 30px;
       right: 30px;
-      border: 2px solid #fff;
+      border: 2px solid var(--white-color);
       box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
       content: '';
-      opacity: 0;
+        opacity: 0;
       transition: opacity 0.35s, transform 0.35s;
       transform: scale3d(1.4,1.4,1);
     }
@@ -494,15 +517,15 @@
     .paging{}
     
     .ig-btn-prev, .ig-btn-next{
-      background: #009999;
+      background: var(--primary-color);
       padding: 12px 50px;
-      color: #fff;
+      color: var(--white-color);
       font-size: 1.2rem;
       
     }
     .ig-btn-prev:hover, .ig-btn-next:hover{
-      background-color: #086969;
-      color: #fff;
+      background-color: var(--primary-dark-color);
+      color: var(--white-color);
     }
     .paging-link{
       display: flex;
@@ -512,15 +535,15 @@
       height: 60px;
       width: 60px;
       margin: 10px;
-      background-color: #EEEEEE;
+      background-color: var(--bg-primary-color);
       font-size: 1.1rem;
       color: #999;
       border-radius: 5px;
       transition: all 0.3s;
     }
     .paging-link:hover{
-      background-color: #009999;
-      color: #fff;
+      background-color: var(--primary-color);
+      color: var(--white-color);
       transition: all 0.3s;
     }
   
@@ -548,12 +571,15 @@
     /*=====================*/
       /* footer */
      /*=====================*/
-     .footer-section{
-      background-color: #EEEEEE;
-     }
-     
+     .footer-section {
+      background-color: var(--bg-primary-color);
+      padding: 48px 0 16px 0;
+  }
      .ig-footer-title{
       font-size: 1.4rem;
+     }
+     .terms-policy{
+      float: right;
      }
      
   
@@ -659,29 +685,68 @@
         box-shadow: 0 0 0 0;
     }
       .ig-container-content{
-        max-width:888px;
+        max-width:887px;
       }
       .about-title-img{
         width: 50%;
       }
     }
     @media only screen and (max-width:767px){
-      .ig-pagination{
+     .ig-pagination{
         flex-direction: column;
-      }
+      } 
       .about-title-img{
         width: 100%;
       }
     }
   
     @media only screen and (max-width:575px){
-      .ig-container-content{
-        max-width: 420px;
+      html {
+        font-size: 14px; 
       }
-      .ig-search-input{
+      .ig-hero {
+        min-height: 170px;
+    }
+      .ig-container-content{
+        /* max-width: 420px; */
+        max-width: 550px;
+      }
+       .ig-search-input {
         width: 100%;
         max-width: 360px;
+        height: 35px;
+      }
+      .section-content {
+        margin: 24px 0px 70px 0px;
+        }
+        .content-row-mid {
+          margin: 0;
+      }
+      .content-mid {
+        margin-bottom: 18px;
+    }
+       .xm-social-link.mb-5{
+        margin-bottom: 0 !important;
+       }
+       .justify-content-xsm.justify-content-end{
+        justify-content: center !important;
+       }
+       .paging-link {
+       
+        height: 30px;
+        width: 30px;
+        margin: 5px;
         
+        
+    }
+       .ig-btn-prev, .ig-btn-next {
+        padding: 5px 20px;
+        font-size: 1rem;
+    }
+       
+       .terms-policy{
+        float: none;
+        text-align: center;
        }
     }
     
@@ -689,9 +754,155 @@
     /* Style adjustments for viewports that meet the condition */
   }
   
+  /* 
+  @media screen and (min-width: 1600px) {
+    .projects-thumb-large {
+      min-height: 416px;
+    }
+  }
   
+  @media screen and (max-width: 1280px) {
+    .contact svg {
+      bottom: 0;
+      margin-bottom: 0;
+    }
+  }
   
+  @media screen and (max-width: 991px) {
+    h1 {
+      font-size: 48px;
+    }
   
+    h2 {
+      font-size: 36px;
+    }
+  
+    h3 {
+      font-size: 32px;
+    }
+  
+    h4 {
+      font-size: 28px;
+    }
+  
+    h5 {
+      font-size: 20px;
+    }
+  
+    h6 {
+      font-size: 18px;
+    }
+  
+    .section-padding {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  
+    .custom-btn {
+      font-size: var(--copyright-text-font-size);
+      padding: 8px 16px;
+    }
+  
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-left: 0;
+    }
+  
+    .navbar-nav .nav-link {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    .site-header .social-icon {
+      text-align: left;
+      margin-top: 10px;
+    }
+  
+    .carousel-caption {
+      width: 100%;
+    }
+  
+    .about-thumb {
+      padding: 30px;
+    }
+  
+    .about-image {
+      height: auto;
+      margin-bottom: 24px;
+    }
+  
+    .contact-container-wrap {
+      padding-bottom: 50px;
+    }
+  
+    .contact-form {
+      margin-right: 0;
+      margin-top: 80px;
+      margin-bottom: 50px;
+    }
+  
+    .contact-thumb {
+      bottom: 0;
+      margin-bottom: 0;
+    }
+  
+    .site-footer {
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 38px;
+    }
+  
+    h2 {
+      font-size: 32px;
+    }
+  
+    h3 {
+      font-size: 28px;
+    }
+  
+    h4 {
+      font-size: 24px;
+    }
+  
+    h5 {
+      font-size: 20px;
+    }
+  
+    .contact-icon {
+      font-size: 24px;
+    }
+  
+    .site-header p {
+      font-size: 14px;
+    }
+  
+    .carousel-control-next, 
+    .carousel-control-prev {
+      bottom: 20px;
+    }
+  
+    .nav-tabs .nav-link {
+      margin-right: 0;
+      margin-left: 0;
+      padding: 15px;
+    }
+  
+    .contact-info {
+      padding: 30px 25px;
+    }
+  
+    .site-footer-wrap {
+      flex-direction: column;
+    }
+  
+    .copyright-text {
+      padding-bottom: 10px;
+    }
+  }
+   */
   
   @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
