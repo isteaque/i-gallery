@@ -351,10 +351,10 @@
      /*=====================*/
      .ig-hero{
        min-height: 200px;
-       background-image: url(../img/hero.jpg);
+       background-image: url(../img/naturephot-ec32e94608f809e.webp);
        background-repeat: no-repeat;
        background-size: cover;
-       background-position: center;
+       background-position: center center;
        background-attachment: fixed;
        background-origin: content-box;
        /* background: transparent; */
@@ -1043,5 +1043,4 @@
       page-break-after: avoid;
     }
   }
-  
   
