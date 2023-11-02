@@ -394,7 +394,7 @@
      /*=====================*/
      
      .section-content{
-      margin: 48px 0px 70px 0px;
+      margin: 48px 0px 24px 0px;
      }
      .content-heading{
       color: var(--primary-color);
@@ -551,7 +551,13 @@
     .section-content-about {
       margin: 70px 0px 0px 0px;
   }
+    .about-row{
+      margin-bottom: 48px;
+    }
     .about-des{}
+    .about-des h1{
+      margin-bottom: 24px;
+    }
      .about-title-img{
       width: 40%;
      }
@@ -561,11 +567,26 @@
      .text-justify{
       text-align: justify;
      }
+
+     /*=====================*/
+      /* contact.html content */
+     /*=====================*/
+     .section-content-about {
+      margin: 48px 0px 0px 0px;
+      }
+      
     /*=====================*/
       /* contact.html content */
-     /*=====================*/   
-     .custom-img{
-      
+     /*=====================*/
+     .contact-row-mid{
+
+     }   
+     .custom-img{}
+     .contact-img-h2 {
+      margin-top: 5px;
+  }
+     .contact-heading{
+      margin-bottom: 24px;
      }
   
     /*=====================*/
@@ -690,15 +711,47 @@
       .about-title-img{
         width: 50%;
       }
+      .contact-type{
+        margin-top: 24px;
+      }
+      .contact-heading {
+        margin-bottom: 8px;
+      }
     }
     @media only screen and (max-width:767px){
-     .ig-pagination{
+      .section-content-about {
+        margin: 30px 0px 0px 0px;
+    }
+      .ig-pagination{
         flex-direction: column;
       } 
+      .section-content {
+        margin: 48px 0px 48px 0px;
+      }
+      .content-mid {
+        margin-bottom: 20px;
+      }
       .about-title-img{
         width: 100%;
       }
-    }
+
+      .contact-type{
+        margin-top: 24px;
+      }
+      .contact-heading {
+        margin-bottom: 8px;
+      }
+      .paging-link {
+       
+        height: 30px;
+        width: 30px;
+        margin: 5px;  
+      }
+       .ig-btn-prev, .ig-btn-next {
+        padding: 5px 20px;
+        font-size: 1rem;
+      }
+
   
     @media only screen and (max-width:575px){
       html {
@@ -717,7 +770,7 @@
         height: 35px;
       }
       .section-content {
-        margin: 24px 0px 70px 0px;
+        margin: 24px 0px 24px 0px;
         }
         .content-row-mid {
           margin: 0;
@@ -728,6 +781,18 @@
       figure.ig-figure-effect h2 {
         font-size: 1em;
       }
+      .contact-row-mid {
+        padding: 0px 15px;
+    }
+      .contact-type{
+        margin-top: 24px;
+      }
+      .contact-heading {
+        margin-bottom: 8px;
+      }
+      .contact-img {
+        width: 100%;
+    }
        .xm-social-link.mb-5{
         margin-bottom: 0 !important;
        }
