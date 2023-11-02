@@ -706,7 +706,7 @@
       }
       .ig-hero {
         min-height: 170px;
-    }
+      }
       .ig-container-content{
         /* max-width: 420px; */
         max-width: 550px;
@@ -724,7 +724,10 @@
       }
       .content-mid {
         margin-bottom: 18px;
-    }
+      }
+      figure.ig-figure-effect h2 {
+        font-size: 1em;
+      }
        .xm-social-link.mb-5{
         margin-bottom: 0 !important;
        }
@@ -735,14 +738,12 @@
        
         height: 30px;
         width: 30px;
-        margin: 5px;
-        
-        
-    }
+        margin: 5px;  
+      }
        .ig-btn-prev, .ig-btn-next {
         padding: 5px 20px;
         font-size: 1rem;
-    }
+      }
        
        .terms-policy{
         float: none;
